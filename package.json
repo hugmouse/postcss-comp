@@ -4,6 +4,9 @@
   "description": "PostCSS with Autoprefixer right in your browser",
   "main": "index.html",
   "private": true,
+  "scripts": {
+    "build": "vite build"
+  },
   "dependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.3",
