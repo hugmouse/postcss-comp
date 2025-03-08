@@ -1,0 +1,70 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #09090b;
+    color: #fafafa;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.options {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.editor-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.editor-column div {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+div.editor-container label {
+    flex-grow: 1;
+}
+
+textarea {
+    width: 96%;
+    height: 300px;
+    font-family: monospace;
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #121212;
+    color: #f1f1f1;
+    font-size: 0.8rem;
+}
+
+button {
+    margin-top: 1rem;
+    background-color: #fafafa;
+    color: #18181b;
+    border: 1px solid #333;
+    padding: 10px 16px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}

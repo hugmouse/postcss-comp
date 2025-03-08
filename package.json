@@ -1,0 +1,16 @@
+{
+  "name": "postcss-comp",
+  "version": "1.0.0",
+  "description": "PostCSS with Autoprefixer right in your browser",
+  "main": "index.html",
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "postcss-preset-env": "^10.1.5",
+    "vite": "^6.2.0"
+  },
+  "devDependencies": {
+    "vite-plugin-pwa": "^0.21.1"
+  }
+}

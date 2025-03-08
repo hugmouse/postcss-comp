@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostCSS Compiler</title>
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+
+<h2>PostCSS Compiler</h2>
+<p>Select plugins, edit CSS, then click "Compile" to see the processed output.</p>
+
+<div class="options">
+    <label><input type="checkbox" id="use-autoprefixer" checked> Autoprefixer</label>
+    <label><input type="checkbox" id="use-preset-env" checked> PostCSS Preset Env</label>
+</div>
+
+<div class="editor-container">
+    <label> Input CSS:
+        <textarea id="input-css">:root {
+  --main-color: #4285f4;
+  --secondary-color: #34a853;
+}
+
+.example {
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-color);
+  color: white;
+  padding: 15px;
+  gap: 10px;
+  user-select: none;
+}
+
+.example:hover {
+  background-color: var(--secondary-color);
+  transition: background-color 0.3s;
+}</textarea>
+    </label>
+    <label>Compiled CSS:
+        <textarea id="output-css" readonly></textarea>
+    </label>
+</div>
+
+<button id="compile-button">Compile CSS</button>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
